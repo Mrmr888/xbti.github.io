@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XBTI × MBTI | 宣卿中学版</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero card">
+      <img
+        class="school-badge"
+        src="C:/Users/MX/.cursor/projects/d-Project-Code-xbti/assets/c__Users_MX_AppData_Roaming_Cursor_User_workspaceStorage_0f67737a2d554f9267adf0e7d0943118_images_image-901bb5ec-2c96-4f6e-b9e4-ea16f6189ca3.png"
+        alt="肇庆宣卿中学校标"
+      />
+      <p class="eyebrow">XBTI × MBTI 宣卿中学版</p>
+      <h1>当“你是谁”遇上“你在校园里怎么活”</h1>
+      <p class="intro">
+        MBTI 偏向描述你的认知偏好，XBTI 更关注你在宣卿中学的日常行为模式：早读、作业、考试、社交和能量管理。
+      </p>
+      <button id="startBtn" class="primary-btn">开始测试（10题）</button>
+    </header>
+
+    <section id="quizSection" class="card hidden">
+      <div class="quiz-header">
+        <h2 id="questionTitle">题目</h2>
+        <p id="progressText">1 / 10</p>
+      </div>
+      <div id="optionsBox" class="options"></div>
+      <div class="quiz-actions">
+        <button id="prevBtn" class="ghost-btn">上一题</button>
+        <button id="nextBtn" class="primary-btn">下一题</button>
+      </div>
+    </section>
+
+    <section id="resultSection" class="card hidden">
+      <h2>你的 XBTI 结果</h2>
+      <div id="resultCode" class="result-code"></div>
+      <p id="resultDesc" class="result-desc"></p>
+      <ul id="resultBullets" class="result-bullets"></ul>
+      <p id="resultMbti" class="result-mbti"></p>
+      <button id="restartBtn" class="primary-btn">重新测试</button>
+    </section>
+
+    <section class="card note">
+      <h3>说明</h3>
+      <p>
+        本测试用于娱乐与自我观察，不构成心理诊断。结果是校园情境化表达，帮助你理解自己的行为风格与协作方式。
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
